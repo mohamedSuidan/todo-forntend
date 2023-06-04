@@ -1,0 +1,72 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.todo .todo-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  min-height: 0px;
+  background-color: #f4f4f4;
+  padding: 18px 12px;
+  border-radius: 5px;
+}
+.todo .todo-input .input {
+  width: 75%;
+  padding: 10px 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.todo .todo-input .add-todo {
+  padding: 10px 5px;
+  margin-left: 6px;
+  border: none;
+  background-color: #8a45e7;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 18%;
+}
+.todo-list .list {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.todo-list p {
+  margin: 0;
+  display: inline-block;
+  width: 65%;
+}
+.todo-list .btn {
+  padding: 9px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.todo-list .btn.del {
+  background-color: #f44336;
+  margin-right: 8px;
+}
+.todo-list .btn.done {
+  background-color: #4caf50;
+  cursor: pointer;
+}
+.todo-list .list .splash {
+  text-decoration: line-through;
+}
+.alert {
+  text-align: center;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border: 1px solid transparent;
+  padding: 13px 22px;
+  border-radius: 5px;
+}
