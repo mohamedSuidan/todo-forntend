@@ -10,7 +10,7 @@ function App() {
   let [err, setErr] = useState("");
   useEffect(() => {
     async function getList() {
-      let data = await axios.get("http://localhost:4000/todo");
+      let data = await axios.get("https://www-mdvm.onrender.com/todo");
       setData(data.data.data);
     }
     getList();
@@ -18,7 +18,7 @@ function App() {
   let addData = async () => {
     if (text !== "") {
       setErr("");
-      let added = await axios.post("http://localhost:4000/todo/add", {
+      let added = await axios.post("https://www-mdvm.onrender.com/todo/add", {
         text: text,
       });
       setData([...data, { _id: added.data._id, todo: text, done: false }]);
@@ -32,7 +32,7 @@ function App() {
       return String(ele._id) !== e.target.id;
     });
     setData(deleted);
-    await axios.get("http://localhost:4000/todo/del", {
+    await axios.get("https://www-mdvm.onrender.com/todo/del", {
       params: {
         id: e.target.id,
       },
@@ -55,7 +55,7 @@ function App() {
       }
     });
     setData(doneData);
-    await axios.post("http://localhost:4000/todo/done", {
+    await axios.post("https://www-mdvm.onrender.com/todo/done", {
       id: e.target.id,
     });
   };
